@@ -1,6 +1,7 @@
 import React from "react";
 import { HeartIcon } from "@heroicons/react/solid";
 const Story = ({ img, username }) => {
+  
   return (
     <div>
       <img
