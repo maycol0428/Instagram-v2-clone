@@ -21,7 +21,7 @@ const Post = ({ id, username, userImg, img, caption }) => {
         <p className="flex-1 font-bold">{username}</p>
         <DotsHorizontalIcon className="h-5"></DotsHorizontalIcon>
       </div>
-      <img src={userImg} alt="" className="object-cover w-full" />
+      <img src={img} alt="" className="object-cover w-full" />
       <div className="flex justify-between px-4 pt-4">
         <div className="flex space-x-4">
           <HeartIcon className="btn"></HeartIcon>
