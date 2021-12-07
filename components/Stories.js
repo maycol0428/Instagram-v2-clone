@@ -11,22 +11,18 @@ const Stories = () => {
       ...faker.helpers.contextualCard(),
       id: i,
     }));
+    console.log(suggestions);
     setSeggentions(suggestions);
   }, []);
 
   return (
     <div className="flex space-x-2 p-6 bg-white mt-8 border-gray-200 border rounded-sm overflow-x-scroll scrollbar-thin  scrollbar-thumb-black scrollbar-track-gray-100">
-      {session && (
-        <Story
-          img={session?.user?.image}
-          username={session?.user?.username}
-        ></Story>
-      )}
+      {session && <Story img={session?.user?.image} username={session?.user?.username}></Story>}
       {suggestions.map((profile, index) => {
         return (
           <Story
             key={index}
-            img={profile.avatar}
+            img={"https://res.cloudinary.com/dusuvygde/image/upload/v1637639828/posts/za2btgdatmjv4iyoovfv.jpg"}
             username={profile.username}
           ></Story>
         );
